@@ -14,6 +14,8 @@ const db = mysql.createPool({
     port: 3307
 });
 
+
+
 app.get("/termekek", async (req, res) => {
     try {
         const [eredmeny] = await db.query(`
